@@ -1,14 +1,11 @@
 package com.example.om.task4;
 
-import android.app.Fragment;
+
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.FrameLayout;
-
 import java.util.ArrayList;
-import java.util.Random;
 
 
 //4.​ ​Расположить​ ​на​ ​экране​ ​4​ ​фрагмента.​ ​По​ ​клику​ ​на​ ​любой​ ​из​ ​них​ ​менять​ ​цвет​ ​3х​ ​других

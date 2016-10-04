@@ -1,9 +1,9 @@
 package com.example.om.task4;
 
-import android.app.Fragment;
+
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +31,7 @@ public class FragmentFirst extends Fragment {
                 Fragment fragment = getActivity().getSupportFragmentManager()
                         .findFragmentByTag(FragmentSecond.class.getSimpleName());
                 FragmentSecond fragmentSecond = (FragmentSecond) fragment;
-                fragmentSecond.setBackgroundColor(Color.parseColor("#faaaf")););
+                fragmentSecond.setBackgroundColor(Color.parseColor("#faaaf"));
             }
         });
         return root;
