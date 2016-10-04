@@ -28,6 +28,6 @@ public class FragmentSecond extends Fragment {
     }
 
     public void setBackgroundColor(int backgroundColor) {
-        fragment_second.backgroundColor();
+        fragment_second = backgroundColor;
     }
 }
