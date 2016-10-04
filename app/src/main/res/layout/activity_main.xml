@@ -14,24 +14,32 @@
         android:id="@+id/fragment_first"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.5"
+        android:background="#000000"
+        android:onClick="clickFragmentFirst" />
 
     <FrameLayout
         android:id="@+id/fragment_second"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.5"
+        android:background="#444444"
+        android:onClick="clickFragmentSecond" />
 
     <FrameLayout
         android:id="@+id/fragment_third"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.5"
+        android:background="#777777"
+        android:onClick="clickFragmentThird" />
 
     <FrameLayout
         android:id="@+id/fragment_forth"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.5" />
+        android:layout_weight="0.5"
+        android:background="#999999"
+        android:onClick="clickFragmentForth" />
 
 </LinearLayout>
