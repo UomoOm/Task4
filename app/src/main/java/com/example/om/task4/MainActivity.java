@@ -10,6 +10,7 @@ import android.widget.FrameLayout;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 //4.​ ​Расположить​ ​на​ ​экране​ ​4​ ​фрагмента.​ ​По​ ​клику​ ​на​ ​любой​ ​из​ ​них​ ​менять​ ​цвет​ ​3х​ ​других
 //        фрагментов
 //        (view.setBackgroundColor(Color.parseColor("#fffff"));).​ ​Цвета​ ​должны​ ​быть​ ​заданы​ ​в​ ​массиве​
@@ -24,19 +25,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_first, FragmentFirst.newInstance(),
+                        FragmentFirst.class.getSimpleName())
+                .replace(R.id.fragment_second, FragmentSecond.newInstance(),
+                        FragmentSecond.class.getSimpleName())
+                .commit();
     }
 
-
-    public void clickFragmentFirst(View view) {
-
-        view.setBackgroundColor(Color.parseColor("#C0C0C0"));
-
-    }
-
-    public void clickFragmentSecond(View view) {
-
-        view.setBackgroundColor(Color.parseColor("#00ffff"));
-    }
 
     public void clickFragmentThird(View view) {
 

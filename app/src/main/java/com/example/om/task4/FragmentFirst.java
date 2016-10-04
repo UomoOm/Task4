@@ -11,6 +11,7 @@ import android.widget.FrameLayout;
 
 
 public class FragmentFirst extends Fragment {
+
     private FrameLayout fragment_first;
 
     public static FragmentFirst newInstance() {
@@ -23,7 +24,16 @@ public class FragmentFirst extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_first, container, false);
         fragment_first = (FrameLayout) root.findViewById(R.id.fragment_first);
-        fragment_first.setBackgroundColor(Color.parseColor("#808000"));
+        fragment_first.setBackgroundColor(Color.parseColor("#fffff"));
+        fragment_first.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = getActivity().getSupportFragmentManager()
+                        .findFragmentByTag(FragmentSecond.class.getSimpleName());
+                FragmentSecond fragmentSecond = (FragmentSecond) fragment;
+                fragmentSecond.setBackgroundColor(Color.parseColor("#faaaf")););
+            }
+        });
         return root;
     }
 }
