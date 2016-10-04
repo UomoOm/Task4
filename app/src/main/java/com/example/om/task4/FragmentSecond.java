@@ -4,6 +4,7 @@ package com.example.om.task4;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +28,7 @@ public class FragmentSecond extends Fragment {
         return root;
     }
 
-    public void setBackgroundColor(int backgroundColor) {
-        fragment_second = backgroundColor;
+    public void setBackgroundColor(int color) {
+        root.setBackgroundColor(color);
     }
 }
